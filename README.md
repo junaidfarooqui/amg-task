@@ -1,4 +1,4 @@
-# AngularTourOfHeroes
+# Angular Leasing Management App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1. also use angular 14+
 
