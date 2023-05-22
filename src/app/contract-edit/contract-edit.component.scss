@@ -1,0 +1,44 @@
+form {
+  max-width: 100%;
+  width: 800px;
+  font-size: 14px;
+  .section-box {
+    width: 100%;
+    border: 1px solid #c1c1c1;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+    .form-item {
+      width: 50%;
+      float: left;
+      margin-bottom: 10px;
+      label {
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+      }
+      input[type=text], input[type=number], select {
+        font-size: 14px;
+        padding: 5px;
+        width: 300px;
+        max-width: 100%;
+        border: 1px solid #c1c1c1;
+      }
+      select {
+        width: 310px;
+      }
+      .contractId {
+        background: #dedede;
+        pointer-events: none;
+      }
+    }
+  }
+  .submit-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+}

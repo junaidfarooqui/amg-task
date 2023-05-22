@@ -1,0 +1,30 @@
+<h3>Leasing Contracts</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th>Contract No</th>
+        <th>Customer</th>
+        <th>Vehicle</th>
+        <th>VIN</th>
+        <th>Monthly Rate</th>
+        <th>Vehicle Price</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let contract of contracts">
+        <td>{{ contract.id }}</td>
+        <td>{{ contract.customer.firstName }} {{ contract.customer.lastName }}</td>
+        <td>{{ contract.vehicle.brand }} {{ contract.vehicle.model }}</td>
+        <td>{{ contract.vehicle.vin }}</td>
+        <td>{{ contract.monthlyRate }}</td>
+        <td>{{ contract.vehicle.price }}</td>
+        <td>
+            <!-- Navigate to the edit contract page -->
+            <a [routerLink]="['/edit-contract', contract.id]">Edit</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+

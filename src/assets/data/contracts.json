@@ -1,0 +1,92 @@
+[
+  {
+    "id": "24944968",
+    "monthlyRate": 556.33,
+    "vehicle": {
+      "id": 234935289,
+      "brand": "Audi",
+      "model": "A4",
+      "modelYear": 2021,
+      "vin": "WAUZZZ8K1BN123456",
+      "price": 42000.5
+    },
+    "customer": {
+      "id": "920465",
+      "firstName": "Harry",
+      "lastName": "Watson",
+      "birthDate": "1995-07-11"
+    }
+  },
+  {
+    "id": "37459283",
+    "monthlyRate": 600.75,
+    "vehicle": {
+      "id": 384759482,
+      "brand": "Toyota",
+      "model": "Rav4",
+      "modelYear": 2023,
+      "vin": "2T3E1RFV4NW123456",
+      "price": 35000.75
+    },
+    "customer": {
+      "id": 948230,
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "birthDate": "1992-09-10"
+    }
+  },
+  {
+    "id": "95843204",
+    "monthlyRate": 320.5,
+    "vehicle": {
+      "id": 109856789,
+      "brand": "Honda",
+      "model": "Accord",
+      "modelYear": 2022,
+      "vin": "SHHFK7H45DU987654",
+      "price": 28000
+    },
+    "customer": {
+      "id": 385295,
+      "firstName": "Michael",
+      "lastName": "Smith",
+      "birthDate": "1987-07-22"
+    }
+  },
+  {
+    "id": 48275930,
+    "monthlyRate": 700.99,
+    "vehicle": {
+      "id": 128304859,
+      "brand": "Mercedes-Benz",
+      "model": "E-Class",
+      "modelYear": 2022,
+      "vin": "WDDZF8JB5DA123456",
+      "price": 80000
+    },
+    "customer": {
+      "id": 928475,
+      "firstName": "Sophia",
+      "lastName": "Davis",
+      "birthDate": "1995-03-05"
+    }
+  },
+  {
+    "id": "75943281",
+    "monthlyRate": 550.25,
+    "vehicle": {
+      "id": 384909482,
+      "brand": "Toyota",
+      "model": "Camry",
+      "modelYear": 2021,
+      "vin": "2T3E1RFV4NW123456",
+      "price": 30000
+    },
+    "customer": {
+      "id": 238475,
+      "firstName": "Emma",
+      "lastName": "Wilson",
+      "birthDate": "1998-11-15"
+    }
+  }
+]

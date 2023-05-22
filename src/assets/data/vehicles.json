@@ -1,0 +1,66 @@
+[
+  {
+    "id": 494949494,
+    "brand": "BMW",
+    "model": "X51",
+    "modelYear": 2021,
+    "vin": "W0L000051T2123456",
+    "price": 65356.3
+  },
+  {
+    "id": 594855395,
+    "brand": "Ford",
+    "model": "Mustang",
+    "modelYear": 2023,
+    "vin": "1FA6P8JZ7M5554321",
+    "price": 45999.99
+  },
+  {
+    "id": 234935289,
+    "brand": "Audi",
+    "model": "A4",
+    "modelYear": 2021,
+    "vin": "WAUZZZ8K1BN123456",
+    "price": 42000.5
+  },
+  {
+    "id": 128304859,
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "modelYear": 2022,
+    "vin": "WDDZF8JB5DA123456",
+    "price": 80000
+  },
+  {
+    "id": 384759482,
+    "brand": "Toyota",
+    "model": "Rav4",
+    "modelYear": 2023,
+    "vin": "2T3E1RFV4NW123456",
+    "price": 35000.75
+  },
+  {
+    "id": 384909482,
+    "brand": "Toyota",
+    "model": "Camry",
+    "modelYear": 2021,
+    "vin": "2T3E1RFV4NW123456",
+    "price": 30000
+  },
+  {
+    "id": 109856789,
+    "brand": "Honda",
+    "model": "Accord",
+    "modelYear": 2022,
+    "vin": "SHHFK7H45DU987654",
+    "price": 28000
+  },
+  {
+    "id": 954154321,
+    "brand": "Ford",
+    "model": "F-150",
+    "modelYear": 2021,
+    "vin": "1FA6P8JZ2K888888",
+    "price": 40000
+  }
+]

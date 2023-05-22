@@ -1,0 +1,82 @@
+<h2>Edit Contract</h2>
+
+<!-- Customer Section -->
+
+<form [formGroup]="contractForm" (submit)="saveContract()">
+    <div class="section-box">
+        <h3>Customer Information</h3>
+        <!-- Add other customer fields here -->
+        <div class="form-item">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" formControlName="firstName" name="firstName" [(ngModel)]="contractForm.value.firstName">
+        </div>
+        <div class="form-item">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" formControlName="lastName" name="lastName" [(ngModel)]="contractForm.value.lastName">
+        </div>
+        <div class="form-item">
+            <label for="birthDate">Birth Date:</label>
+            <input type="text" id="birthDate" formControlName="birthDate" name="birthDate" [(ngModel)]="contractForm.value.birthDate">
+        </div>
+    </div>
+
+    <!-- Vehicle Section -->
+    <div class="section-box">
+        <h3>Vehicle Information</h3>
+        <!-- Add other vehicle fields here -->
+        <div class="form-item">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" formControlName="brand" name="brand" [(ngModel)]="contractForm.value.brand">
+        </div>
+        <div class="form-item">
+            <label for="model">Model:</label>
+            <input type="text" id="model" formControlName="model" name="model" [(ngModel)]="contractForm.value.model">
+        </div>
+        <div class="form-item">
+            <label for="modelYear">Model Year:</label>
+            <input type="number" id="modelYear" formControlName="modelYear" name="modelYear" [(ngModel)]="contractForm.value.modelYear">
+        </div>
+        <div class="form-item">
+            <label for="vin">VIN:</label>
+            <input type="text" id="vin" formControlName="vin" name="vin" [(ngModel)]="contractForm.value.vin">
+        </div>
+        <div class="form-item">
+            <label for="price">Price:</label>
+            <input type="number" id="price" formControlName="price" name="price" [(ngModel)]="contractForm.value.price">
+        </div>
+    </div>
+
+    <!-- Contract Section -->
+    <div class="section-box">
+        <h3>Contract Information</h3>
+        <div class="form-item">
+            <label for="id">Contract No:</label>
+            <input type="text" class="contractId" id="id" formControlName="id" name="id" [(ngModel)]="contractForm.value.id">
+        </div>
+        <div class="form-item">
+            <label for="monthlyRate">Monthly Rate:</label>
+            <input type="number" id="monthlyRate" formControlName="monthlyRate" name="monthlyRate" [(ngModel)]="contractForm.value.monthlyRate">
+        </div>
+
+        <div class="form-item">
+            <label for="customerId">Customer:</label>
+            <select id="customerId" formControlName="customerId" name="customerId" (change)="onCustomerSelected($event)">
+                <option *ngFor="let customer of customers" [value]="customer.id">
+                    {{ customer.firstName }} {{ customer.lastName }}
+                </option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <label for="vehicleId">Vehicle:</label>
+            <select id="vehicleId" formControlName="vehicleId" name="vehicleId" (change)="onVehicleSelected($event)">
+                <option *ngFor="let vehicle of vehicles" [value]="vehicle.id">
+                    {{ vehicle.brand }} {{ vehicle.model }}
+                </option>
+            </select>
+        </div>
+    </div>
+    <p *ngIf="vehicleAlreadyAssigned" class="error-message">Vehicle is already assigned to a contract</p>
+
+    <button class="submit-button" type="submit">Save Contract</button>
+</form>
